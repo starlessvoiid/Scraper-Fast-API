@@ -13,7 +13,7 @@ class Scraper() :
         # Return variables
         movies_data = []
 
-        pages = [1]
+        pages = [1, 51, 101]
 
         # Looping through all pages
         for page in pages :
