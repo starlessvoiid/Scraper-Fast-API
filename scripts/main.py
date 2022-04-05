@@ -20,7 +20,7 @@ async def read_data(tag) :
     with open(f"json_data_{tag}.txt", "w") as outfile :
         json.dump(data, outfile)
     
-    df = pd.read_json (r'json_data_{tag}.txt')
-    df.to_csv (r'data_csv_{tag}.csv', index = None)
+    df = pd.read_json(f'json_data_{tag}.txt')
+    df.to_csv (f'data_csv_{tag}.csv', index = None)
     
     return "done"
